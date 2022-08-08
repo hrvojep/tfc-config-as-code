@@ -1,0 +1,6 @@
+name: h-test1
+version: 1.0.8
+description: This is a very simple demo that provisions aws EC2 instances.
+tags:
+  - htest
+  - autoinject

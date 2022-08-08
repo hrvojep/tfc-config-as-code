@@ -54,7 +54,7 @@ resource "tfe_workspace" "tfc-config-as-code" {
   trigger_prefixes              = []
 
   vcs_repo {
-    identifier         = "ausmartway/tfc-config-as-code"
+    identifier         = "hrvojep/tfc-config-as-code"
     ingress_submodules = false
     oauth_token_id     = local.tfc_oauth_token
   }
