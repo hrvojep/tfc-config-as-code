@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "yulei"
+    organization = var.organization
 
     workspaces {
       name = "tfc-config-as-code"
