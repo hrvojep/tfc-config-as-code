@@ -1,14 +1,14 @@
 # ##test123
-# terraform {
-#   required_version = ">= 1.0"
-#   required_providers {
-#     tfe = ">= 0.26.1"
-#     github = {
-#       source  = "integrations/github"
-#       version = "~> 4.0"
-#     }
-#   }
-# }
+terraform {
+  required_version = ">= 1.0"
+  required_providers {
+    tfe = ">= 0.26.1"
+    github = {
+      source  = "integrations/github"
+      version = "~> 4.0"
+    }
+  }
+}
 
 locals {
   ##this can be changed to switch between A/B github connection.
