@@ -15,13 +15,13 @@ locals {
   tfc_oauth_token = tfe_oauth_client.github-b.oauth_token_id
 }
 
-# provider "tfe" {
-#   token = var.tfe_token
-# }
+provider "tfe" {
+  token = var.tfe_token
+}
 
-# provider "github" {
-#   token = var.github_personal_token
-# }
+provider "github" {
+  token = var.github_personal_token
+}
 
 # //create an agent pool that has to be run locally
 # resource "tfe_agent_pool" "local-agent-pool" {
