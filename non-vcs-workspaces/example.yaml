@@ -1,7 +1,0 @@
-name: non-vcs-workspace-example
-description: This is a test description
-version: 1.0.6
-tags:
-  - tfc
-  - customerfacing
-  - bhp

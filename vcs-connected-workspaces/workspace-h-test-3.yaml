@@ -1,0 +1,10 @@
+name: h-test-3
+version: 1.0.8
+description: Demo that provisiones a TFC workspace, hooks it up to a sample Github repo 
+github_owner: hrvojep
+template_repo: terraform-template
+vcsbranch: 
+vcsworkingdirectory:
+tags:
+  - tfc-demo
+  - auto-provision
