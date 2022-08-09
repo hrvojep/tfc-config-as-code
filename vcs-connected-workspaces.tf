@@ -10,7 +10,7 @@ locals {
 module "vcs-connected-workspace" {
   source  = "app.terraform.io/h-test/vcs-connected-workspace/tfe"
   version = "0.1.1"
-}
+
 
   # insert the 5 required variables here 
   for_each              = local.inputvcsworkspacemap
