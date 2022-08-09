@@ -1,0 +1,10 @@
+name: h-test2
+version: 1.0.8
+description: This is a very simple demo that provisions aws EC2 instances.
+github_owner: hrvojep
+template_repo: terraform-template
+vcsbranch: 
+vcsworkingdirectory:
+tags:
+  - htest
+  - autoinject
