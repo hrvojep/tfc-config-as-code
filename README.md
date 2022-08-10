@@ -12,7 +12,7 @@ It also creates a new GitHub repo (based on a sample repo) and configures the ne
 
 You'll note that all of the heavy lifting happens in the module "vcs-connected-workspace" located in vcs-connected-workspaces.tf
 
-You can use this is a basis for automating the TFC further. Please refer to https://registry.terraform.io/providers/hashicorp/tfe/latest/docs for more info.
+You can use this is a basis for automating the TFC further. Please refer to https://registry.terraform.io/providers/hashicorp/tfe/latest/docs for more info and get ideas of what's possible and which resources are available for further automation.
 
 ## Credit
 All of the heavy lifting was done by Yulei Liu
