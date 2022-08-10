@@ -1,8 +1,9 @@
 locals {
-  # Take a directory of YAML files, read each one that matches naming pattern and bring them in to Terraform's native data set
+  # Take a directory of YAML files, read each one that matches naming pattern and bring them in to Terraform's native data set. Note the .yaml file 
+  #has to be named worspaceXXXX.yaml for instance workspace-dev-appX-webtier.yaml
   inputvcsworkspacevar = [for f in fileset(path.module, "vcs-connected-workspaces/{workspace}*.yaml") : yamldecode(file(f))]
   # Take that data set and format it so that it can be used with the for_each command by converting it to a map where each top level key is a unique identifier.
-  # In this case I am using the appid key from my example YAML files
+  # In this case I am using the appid key from my example YAML files. The name of the workspace created will be called worspace.name
   inputvcsworkspacemap = { for workspace in toset(local.inputvcsworkspacevar) : workspace.name => workspace }
 
 }
