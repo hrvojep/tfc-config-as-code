@@ -9,4 +9,10 @@ As you start on-boarding more teams, projects etc the manual work involved becom
 ## Solutiion
 This sample project uses Terraform code to create and configure new TFC VCS driven workspace in an existing TFC organisation.
 It also creates a new GitHub repo (based on a sample repo) and configures the newly created workspace with a GitHub connection. 
+
+You'll note that all of the heavy lifting happens in the module "vcs-connected-workspace" located in vcs-connected-workspaces.tf
+
 You can use this is a basis for automating the TFC further. Please refer to https://registry.terraform.io/providers/hashicorp/tfe/latest/docs for more info.
+
+## Credit
+All of the heavy lifting was done by Yulei Liu
